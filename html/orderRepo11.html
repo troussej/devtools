@@ -1,0 +1,2591 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script id="f5_cspm">(function(){var f5_cspm={f5_p:'HBHDIAPICKNGFCKNLOCLOJAIFFPPHOOFDADEFAAKEDEBHFAMACHDLAPPECJAGHGOLGOGAGNLJKBEGKEHACOHJLBCFFCHAKBEEEPMPLKOIEGIBEFBJLEGOBBKJMKLEEKO',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,32,(latency>>8));str=f5_cspm.set_byte(str,33,(latency&0xff));str=f5_cspm.set_byte(str,27,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='aaaaaaaaaaaaaaa='+encodeURIComponent(cookie_val)+';path=/';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'){if(pair[1]=='1234'){var d=new Date();d.setTime(d.getTime()-1);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;';setTimeout(f5_cspm.wait_perf_data,100);}}}}}
+f5_cspm.go();}());</script><title>
+Service /atg/commerce/order/OrderRepository/
+</title>
+<link rel="stylesheet" type="text/css" href="orderRepo11_files/admin.css" title="Standard">
+<link rel="alternate stylesheet" type="text/css" href="orderRepo11_files/admin-retro.css" title="Retro" "="">
+<script type="text/javascript" src="orderRepo11_files/admin.js"></script>
+</head>
+<body bgcolor="ffffff" link="E87F02" text="00214A" vlink="637DA6">
+<div id="oracleATGbrand">Commerce</div>
+<p>
+</p><p style="display: inline;"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/">admin</a>/ </p><h1>Component Browser</h1>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://frontadmin11-iti.vuitton.net/dyn/admin/atg/dynamo/admin/en/cmpn-search.jhtml" onclick="toggle_visibility_inline('search'); set_focus('searchField'); return false;">Search</a>
+<form action="/dyn/admin/atg/dynamo/admin/en/cmpn-search.jhtml" style="padding:0; margin:0; display:none;" id="search">By Name <input name="query" id="searchField" type="text"></form><p style="display: inline;">&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://frontadmin11-iti.vuitton.net/dyn/admin/atg/dynamo/admin/en/admin-context.jhtml?returnPage=/dyn/admin/nucleus/atg/commerce/order/OrderRepository/">Context</a>
+</p><h1><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/">Service /</a><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/">atg/</a><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/">commerce/</a><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/">order/</a><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/">OrderRepository/</a></h1>
+Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a>
+<hr>
+<a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=serviceConfiguration">View Service Configuration</a>
+, <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=definitionFiles">
+Examine Repository Template Definition
+</a><br>
+<h2>Examine the Repository, Control Debugging </h2>
+<p><a name="listItemDescriptors"></a><table border="">
+    <tbody><tr><td colspan="4"></td>      <th colspan="2" align="center">
+Debug Logging        </th>    </tr>  <tr><th colspan="4">
+Item Descriptor        </th>        <th>Per Item Descriptor         </th><th>Per Property        </th></tr>
+<tr>
+<th>order</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=order#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=order#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=order#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=order#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=order#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>b2bOrder</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=b2bOrder#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=b2bOrder#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=b2bOrder#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=b2bOrder#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=b2bOrder#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>shippingGroup</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=shippingGroup#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=shippingGroup#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=shippingGroup#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=shippingGroup#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=shippingGroup#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>hardgoodShippingGroup</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=hardgoodShippingGroup#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=hardgoodShippingGroup#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=hardgoodShippingGroup#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=hardgoodShippingGroup#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=hardgoodShippingGroup#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>b2bHardgoodShippingGroup</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=b2bHardgoodShippingGroup#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=b2bHardgoodShippingGroup#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=b2bHardgoodShippingGroup#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=b2bHardgoodShippingGroup#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=b2bHardgoodShippingGroup#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>electronicShippingGroup</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=electronicShippingGroup#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=electronicShippingGroup#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=electronicShippingGroup#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=electronicShippingGroup#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=electronicShippingGroup#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>b2bElectronicShippingGroup</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=b2bElectronicShippingGroup#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=b2bElectronicShippingGroup#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=b2bElectronicShippingGroup#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=b2bElectronicShippingGroup#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=b2bElectronicShippingGroup#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>inStorePickupShippingGroup</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=inStorePickupShippingGroup#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=inStorePickupShippingGroup#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=inStorePickupShippingGroup#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=inStorePickupShippingGroup#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=inStorePickupShippingGroup#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>paymentGroup</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=paymentGroup#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=paymentGroup#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=paymentGroup#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=paymentGroup#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=paymentGroup#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>creditCard</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=creditCard#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=creditCard#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=creditCard#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=creditCard#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=creditCard#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>giftCertificate</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=giftCertificate#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=giftCertificate#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=giftCertificate#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=giftCertificate#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=giftCertificate#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>inStorePayment</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=inStorePayment#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=inStorePayment#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=inStorePayment#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=inStorePayment#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=inStorePayment#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>cash</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=cash#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=cash#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=cash#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=cash#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=cash#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>invoiceRequest</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=invoiceRequest#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=invoiceRequest#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=invoiceRequest#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=invoiceRequest#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=invoiceRequest#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>paymentStatus</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=paymentStatus#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=paymentStatus#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=paymentStatus#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=paymentStatus#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=paymentStatus#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>creditCardStatus</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=creditCardStatus#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=creditCardStatus#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=creditCardStatus#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=creditCardStatus#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=creditCardStatus#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>giftCertificateStatus</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=giftCertificateStatus#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=giftCertificateStatus#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=giftCertificateStatus#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=giftCertificateStatus#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=giftCertificateStatus#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>storeCreditStatus</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=storeCreditStatus#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=storeCreditStatus#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=storeCreditStatus#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=storeCreditStatus#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=storeCreditStatus#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>costCenter</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=costCenter#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=costCenter#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=costCenter#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=costCenter#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=costCenter#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>commerceItem</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=commerceItem#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=commerceItem#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=commerceItem#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=commerceItem#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=commerceItem#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>b2bCommerceItem</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=b2bCommerceItem#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=b2bCommerceItem#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=b2bCommerceItem#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=b2bCommerceItem#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=b2bCommerceItem#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>configurableCommerceItem</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=configurableCommerceItem#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=configurableCommerceItem#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=configurableCommerceItem#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=configurableCommerceItem#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=configurableCommerceItem#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>b2bConfigurableCommerceItem</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=b2bConfigurableCommerceItem#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=b2bConfigurableCommerceItem#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=b2bConfigurableCommerceItem#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=b2bConfigurableCommerceItem#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=b2bConfigurableCommerceItem#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>subSkuCommerceItem</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=subSkuCommerceItem#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=subSkuCommerceItem#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=subSkuCommerceItem#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=subSkuCommerceItem#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=subSkuCommerceItem#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>handlingInstruction</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=handlingInstruction#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=handlingInstruction#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=handlingInstruction#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=handlingInstruction#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=handlingInstruction#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>giftlistHandlingInstruction</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=giftlistHandlingInstruction#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=giftlistHandlingInstruction#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=giftlistHandlingInstruction#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=giftlistHandlingInstruction#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=giftlistHandlingInstruction#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>relationship</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=relationship#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=relationship#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=relationship#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=relationship#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=relationship#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>shipItemRel</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=shipItemRel#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=shipItemRel#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=shipItemRel#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=shipItemRel#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=shipItemRel#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>payItemRel</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=payItemRel#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=payItemRel#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=payItemRel#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=payItemRel#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=payItemRel#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>payShipRel</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=payShipRel#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=payShipRel#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=payShipRel#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=payShipRel#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=payShipRel#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>payOrderRel</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=payOrderRel#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=payOrderRel#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=payOrderRel#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=payOrderRel#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=payOrderRel#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>ccItemRel</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=ccItemRel#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=ccItemRel#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=ccItemRel#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=ccItemRel#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=ccItemRel#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>ccShipRel</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=ccShipRel#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=ccShipRel#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=ccShipRel#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=ccShipRel#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=ccShipRel#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>ccOrderRel</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=ccOrderRel#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=ccOrderRel#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=ccOrderRel#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=ccOrderRel#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=ccOrderRel#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>amountInfo</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=amountInfo#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=amountInfo#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=amountInfo#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=amountInfo#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=amountInfo#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>orderPriceInfo</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=orderPriceInfo#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=orderPriceInfo#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=orderPriceInfo#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=orderPriceInfo#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=orderPriceInfo#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>itemPriceInfo</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=itemPriceInfo#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=itemPriceInfo#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=itemPriceInfo#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=itemPriceInfo#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=itemPriceInfo#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>taxPriceInfo</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=taxPriceInfo#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=taxPriceInfo#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=taxPriceInfo#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=taxPriceInfo#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=taxPriceInfo#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>shippingPriceInfo</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=shippingPriceInfo#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=shippingPriceInfo#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=shippingPriceInfo#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=shippingPriceInfo#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=shippingPriceInfo#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>detailedItemPriceInfo</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=detailedItemPriceInfo#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=detailedItemPriceInfo#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=detailedItemPriceInfo#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=detailedItemPriceInfo#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=detailedItemPriceInfo#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>pricingAdjustment</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=pricingAdjustment#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=pricingAdjustment#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=pricingAdjustment#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=pricingAdjustment#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=pricingAdjustment#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>marker</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=marker#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=marker#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=marker#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=marker#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=marker#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>gwpOrderMarker</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=gwpOrderMarker#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=gwpOrderMarker#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=gwpOrderMarker#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=gwpOrderMarker#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=gwpOrderMarker#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>commerceItemMarker</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=commerceItemMarker#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=commerceItemMarker#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=commerceItemMarker#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=commerceItemMarker#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=commerceItemMarker#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>gwpCommerceItemMarker</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=gwpCommerceItemMarker#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=gwpCommerceItemMarker#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=gwpCommerceItemMarker#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=gwpCommerceItemMarker#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=gwpCommerceItemMarker#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>quoteInfo</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=quoteInfo#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=quoteInfo#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=quoteInfo#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=quoteInfo#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=quoteInfo#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>manualPricingAdjustment</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=manualPricingAdjustment#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=manualPricingAdjustment#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=manualPricingAdjustment#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=manualPricingAdjustment#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=manualPricingAdjustment#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>OrderFixedAmountAdjustment</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=OrderFixedAmountAdjustment#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=OrderFixedAmountAdjustment#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=OrderFixedAmountAdjustment#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=OrderFixedAmountAdjustment#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=OrderFixedAmountAdjustment#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>scheduledOrder</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=scheduledOrder#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=scheduledOrder#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=scheduledOrder#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=scheduledOrder#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=scheduledOrder#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>scheduledOrderError</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=scheduledOrderError#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=scheduledOrderError#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=scheduledOrderError#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=scheduledOrderError#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=scheduledOrderError#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>agentComment</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=agentComment#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=agentComment#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=agentComment#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=agentComment#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=agentComment#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>stateDetail</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=stateDetail#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=stateDetail#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=stateDetail#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=stateDetail#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=stateDetail#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>commercialRefund</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=commercialRefund#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=commercialRefund#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=commercialRefund#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=commercialRefund#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=commercialRefund#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>ccShippingGroup</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=ccShippingGroup#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=ccShippingGroup#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=ccShippingGroup#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=ccShippingGroup#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=ccShippingGroup#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>paymentGroupWithAddress</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=paymentGroupWithAddress#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=paymentGroupWithAddress#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=paymentGroupWithAddress#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=paymentGroupWithAddress#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=paymentGroupWithAddress#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>paymentDivision</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=paymentDivision#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=paymentDivision#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=paymentDivision#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=paymentDivision#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=paymentDivision#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>storeCredit</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=storeCredit#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=storeCredit#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=storeCredit#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=storeCredit#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=storeCredit#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>bankTransfer</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=bankTransfer#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=bankTransfer#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=bankTransfer#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=bankTransfer#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=bankTransfer#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>chargeOnDelivery</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=chargeOnDelivery#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=chargeOnDelivery#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=chargeOnDelivery#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=chargeOnDelivery#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=chargeOnDelivery#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>stockOnHold</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=stockOnHold#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=stockOnHold#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=stockOnHold#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=stockOnHold#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=stockOnHold#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>taxCache</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=taxCache#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=taxCache#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=taxCache#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=taxCache#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=taxCache#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>paypalStatus</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=paypalStatus#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=paypalStatus#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=paypalStatus#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=paypalStatus#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=paypalStatus#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>fraudControllHistory</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=fraudControllHistory#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=fraudControllHistory#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=fraudControllHistory#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=fraudControllHistory#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=fraudControllHistory#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>context</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=context#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=context#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=context#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=context#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=context#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>personalizationItem</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=personalizationItem#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=personalizationItem#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=personalizationItem#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=personalizationItem#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=personalizationItem#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>HSpersonalization</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=HSpersonalization#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=HSpersonalization#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=HSpersonalization#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=HSpersonalization#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=HSpersonalization#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>MOMpersonalization</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=MOMpersonalization#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=MOMpersonalization#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=MOMpersonalization#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=MOMpersonalization#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=MOMpersonalization#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>shippingStatus</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=shippingStatus#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=shippingStatus#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=shippingStatus#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=shippingStatus#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=shippingStatus#debugProperties">
+Edit</a></td>
+</tr>
+<tr>
+<th>paypal</th><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seetmpl&amp;itemdesc=paypal#showProperties">See Property Descriptions</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seeitems&amp;itemdesc=paypal#seeItems">List all items</a></td>
+<td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seenamed&amp;itemdesc=paypal#namedQuery">List named queries</a></td>
+<td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=setiddbg&amp;itemdesc=paypal#listItemDescriptors">Enable</a></td><td align="center"><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=dbgprops&amp;itemdesc=paypal#debugProperties">
+Edit</a></td>
+</tr>
+</tbody></table>
+</p><p><strong><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=seefolders">List all items organized by folder hierarchy</a></strong></p><p></p><form method="POST">
+<h2>Run XML Operation Tags on the Repository</h2>(omit the header and gsa-template tag - enter &lt;add-item&gt;, &lt;print-item&gt; tags directly)
+<p><textarea rows="12" cols="80" name="xmltext"></textarea>
+</p><p><input value="Enter" type="submit">
+</p></form>
+<h2>Cache usage statistics</h2>
+<p><strong><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?action=resetcachestats">Reset Cache Statistics</a></strong></p><p>
+<table border="">
+<tbody><tr>
+<th>&nbsp;</th><th>localEntries</th>
+<th>externEntries</th>
+<th>weakEntries</th>
+<th>localCacheSize</th>
+<th>usedRatio</th>
+<th>totalHits</th>
+<th>totalMisses</th>
+<th>ratio</th>
+<th>localHits</th>
+<th>localMisses</th>
+<th>externalHits</th>
+<th>externalMisses</th>
+<th>weakHits</th>
+<th>weakMisses</th>
+<th>cacheInvalidations</th>
+<th>entryInvalidations</th>
+<th>localCulls</th>
+<th>localItemsCulled</th>
+<th>localMaxCulled</th>
+<th>weakCulls</th>
+<th>weakItemsCulled</th>
+<th>weakMaxCulled</th>
+</tr>
+<tr><td colspan="18"><b>item-descriptor=order cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.32%</td>
+<td>234</td>
+<td>89</td>
+<td>72.45%</td>
+<td>234</td>
+<td>89</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>89</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=b2bOrder cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.32%</td>
+<td>234</td>
+<td>89</td>
+<td>72.45%</td>
+<td>234</td>
+<td>89</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>89</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=shippingGroup cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.32%</td>
+<td>52</td>
+<td>29</td>
+<td>64.2%</td>
+<td>52</td>
+<td>29</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>29</td>
+<td>0</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=hardgoodShippingGroup cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.32%</td>
+<td>52</td>
+<td>29</td>
+<td>64.2%</td>
+<td>52</td>
+<td>29</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>29</td>
+<td>0</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=b2bHardgoodShippingGroup cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.32%</td>
+<td>52</td>
+<td>29</td>
+<td>64.2%</td>
+<td>52</td>
+<td>29</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>29</td>
+<td>0</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=electronicShippingGroup cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.32%</td>
+<td>52</td>
+<td>29</td>
+<td>64.2%</td>
+<td>52</td>
+<td>29</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>29</td>
+<td>0</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>11</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=b2bElectronicShippingGroup cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.32%</td>
+<td>52</td>
+<td>29</td>
+<td>64.2%</td>
+<td>52</td>
+<td>29</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>29</td>
+<td>0</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=inStorePickupShippingGroup cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.32%</td>
+<td>52</td>
+<td>29</td>
+<td>64.2%</td>
+<td>52</td>
+<td>29</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>29</td>
+<td>0</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>13</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=paymentGroup cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>10000</td>
+<td>0.16%</td>
+<td>29</td>
+<td>24</td>
+<td>54.72%</td>
+<td>29</td>
+<td>24</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>24</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>14</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=creditCard cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>10000</td>
+<td>0.16%</td>
+<td>29</td>
+<td>24</td>
+<td>54.72%</td>
+<td>29</td>
+<td>24</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>24</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>15</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=giftCertificate cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>10000</td>
+<td>0.16%</td>
+<td>29</td>
+<td>24</td>
+<td>54.72%</td>
+<td>29</td>
+<td>24</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>24</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=inStorePayment cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>10000</td>
+<td>0.16%</td>
+<td>29</td>
+<td>24</td>
+<td>54.72%</td>
+<td>29</td>
+<td>24</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>24</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>17</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=cash cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>10000</td>
+<td>0.16%</td>
+<td>29</td>
+<td>24</td>
+<td>54.72%</td>
+<td>29</td>
+<td>24</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>24</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>18</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=invoiceRequest cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>10000</td>
+<td>0.16%</td>
+<td>29</td>
+<td>24</td>
+<td>54.72%</td>
+<td>29</td>
+<td>24</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>24</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>19</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=paymentStatus cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>15</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.3%</td>
+<td>3</td>
+<td>16</td>
+<td>15.79%</td>
+<td>3</td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=creditCardStatus cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>15</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.3%</td>
+<td>3</td>
+<td>16</td>
+<td>15.79%</td>
+<td>3</td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=giftCertificateStatus cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>15</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.3%</td>
+<td>3</td>
+<td>16</td>
+<td>15.79%</td>
+<td>3</td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=storeCreditStatus cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>15</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.3%</td>
+<td>3</td>
+<td>16</td>
+<td>15.79%</td>
+<td>3</td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=costCenter cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=commerceItem cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>15</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.3%</td>
+<td>72</td>
+<td>30</td>
+<td>70.59%</td>
+<td>72</td>
+<td>30</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>30</td>
+<td>0</td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=b2bCommerceItem cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>15</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.3%</td>
+<td>72</td>
+<td>30</td>
+<td>70.59%</td>
+<td>72</td>
+<td>30</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>30</td>
+<td>0</td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=configurableCommerceItem cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>15</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.3%</td>
+<td>72</td>
+<td>30</td>
+<td>70.59%</td>
+<td>72</td>
+<td>30</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>30</td>
+<td>0</td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=b2bConfigurableCommerceItem cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>15</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.3%</td>
+<td>72</td>
+<td>30</td>
+<td>70.59%</td>
+<td>72</td>
+<td>30</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>30</td>
+<td>0</td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=subSkuCommerceItem cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>15</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.3%</td>
+<td>72</td>
+<td>30</td>
+<td>70.59%</td>
+<td>72</td>
+<td>30</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>30</td>
+<td>0</td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=handlingInstruction cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=giftlistHandlingInstruction cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=relationship cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>25</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.5%</td>
+<td>49</td>
+<td>41</td>
+<td>54.44%</td>
+<td>49</td>
+<td>41</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>41</td>
+<td>0</td>
+<td>13</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=shipItemRel cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>25</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.5%</td>
+<td>49</td>
+<td>41</td>
+<td>54.44%</td>
+<td>49</td>
+<td>41</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>41</td>
+<td>0</td>
+<td>13</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=payItemRel cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>25</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.5%</td>
+<td>49</td>
+<td>41</td>
+<td>54.44%</td>
+<td>49</td>
+<td>41</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>41</td>
+<td>0</td>
+<td>13</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>11</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=payShipRel cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>25</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.5%</td>
+<td>49</td>
+<td>41</td>
+<td>54.44%</td>
+<td>49</td>
+<td>41</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>41</td>
+<td>0</td>
+<td>13</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=payOrderRel cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>25</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.5%</td>
+<td>49</td>
+<td>41</td>
+<td>54.44%</td>
+<td>49</td>
+<td>41</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>41</td>
+<td>0</td>
+<td>13</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>13</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=ccItemRel cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>25</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.5%</td>
+<td>49</td>
+<td>41</td>
+<td>54.44%</td>
+<td>49</td>
+<td>41</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>41</td>
+<td>0</td>
+<td>13</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>14</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=ccShipRel cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>25</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.5%</td>
+<td>49</td>
+<td>41</td>
+<td>54.44%</td>
+<td>49</td>
+<td>41</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>41</td>
+<td>0</td>
+<td>13</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>15</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=ccOrderRel cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>25</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.5%</td>
+<td>49</td>
+<td>41</td>
+<td>54.44%</td>
+<td>49</td>
+<td>41</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>41</td>
+<td>0</td>
+<td>13</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=amountInfo cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>142</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>2.84%</td>
+<td>351</td>
+<td>295</td>
+<td>54.33%</td>
+<td>351</td>
+<td>295</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>295</td>
+<td>0</td>
+<td>74</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=orderPriceInfo cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>142</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>2.84%</td>
+<td>351</td>
+<td>295</td>
+<td>54.33%</td>
+<td>351</td>
+<td>295</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>295</td>
+<td>0</td>
+<td>74</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=itemPriceInfo cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>142</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>2.84%</td>
+<td>351</td>
+<td>295</td>
+<td>54.33%</td>
+<td>351</td>
+<td>295</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>295</td>
+<td>0</td>
+<td>74</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=taxPriceInfo cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>142</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>2.84%</td>
+<td>351</td>
+<td>295</td>
+<td>54.33%</td>
+<td>351</td>
+<td>295</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>295</td>
+<td>0</td>
+<td>74</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=shippingPriceInfo cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>142</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>2.84%</td>
+<td>351</td>
+<td>295</td>
+<td>54.33%</td>
+<td>351</td>
+<td>295</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>295</td>
+<td>0</td>
+<td>74</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>11</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=detailedItemPriceInfo cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>142</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>2.84%</td>
+<td>351</td>
+<td>295</td>
+<td>54.33%</td>
+<td>351</td>
+<td>295</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>295</td>
+<td>0</td>
+<td>74</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=pricingAdjustment cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>102</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>2.04%</td>
+<td>175</td>
+<td>178</td>
+<td>49.58%</td>
+<td>175</td>
+<td>178</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>178</td>
+<td>0</td>
+<td>57</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=marker cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><th>Queries</th><td>0</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+</tr>
+<tr><td colspan="18"><b>item-descriptor=gwpOrderMarker cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><th>Queries</th><td>0</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+</tr>
+<tr><td colspan="18"><b>item-descriptor=commerceItemMarker cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><th>Queries</th><td>0</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+</tr>
+<tr><td colspan="18"><b>item-descriptor=gwpCommerceItemMarker cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><th>Queries</th><td>0</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+</tr>
+<tr><td colspan="18"><b>item-descriptor=quoteInfo cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=manualPricingAdjustment cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=OrderFixedAmountAdjustment cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=scheduledOrder cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=scheduledOrderError cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=agentComment cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=stateDetail cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>84</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>8.4%</td>
+<td>18</td>
+<td>84</td>
+<td>17.65%</td>
+<td>18</td>
+<td>84</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>84</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=commercialRefund cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=ccShippingGroup cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.32%</td>
+<td>52</td>
+<td>29</td>
+<td>64.2%</td>
+<td>52</td>
+<td>29</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>29</td>
+<td>0</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>14</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=paymentGroupWithAddress cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>10000</td>
+<td>0.16%</td>
+<td>29</td>
+<td>24</td>
+<td>54.72%</td>
+<td>29</td>
+<td>24</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>24</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>20</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=paymentDivision cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>10000</td>
+<td>0.16%</td>
+<td>29</td>
+<td>24</td>
+<td>54.72%</td>
+<td>29</td>
+<td>24</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>24</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>21</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=storeCredit cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>10000</td>
+<td>0.16%</td>
+<td>29</td>
+<td>24</td>
+<td>54.72%</td>
+<td>29</td>
+<td>24</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>24</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>22</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=bankTransfer cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>10000</td>
+<td>0.16%</td>
+<td>29</td>
+<td>24</td>
+<td>54.72%</td>
+<td>29</td>
+<td>24</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>24</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>23</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=chargeOnDelivery cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>10000</td>
+<td>0.16%</td>
+<td>29</td>
+<td>24</td>
+<td>54.72%</td>
+<td>29</td>
+<td>24</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>24</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>24</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=stockOnHold cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>10000</td>
+<td>0.16%</td>
+<td>29</td>
+<td>24</td>
+<td>54.72%</td>
+<td>29</td>
+<td>24</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>24</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>25</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=taxCache cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>1</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.02%</td>
+<td>52</td>
+<td>35</td>
+<td>59.77%</td>
+<td>52</td>
+<td>35</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>35</td>
+<td>0</td>
+<td>17</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=paypalStatus cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>15</td>
+<td>0</td>
+<td>0</td>
+<td>5000</td>
+<td>0.3%</td>
+<td>3</td>
+<td>16</td>
+<td>15.79%</td>
+<td>3</td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=fraudControllHistory cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=context cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>7</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>0.7%</td>
+<td>90</td>
+<td>14</td>
+<td>86.54%</td>
+<td>90</td>
+<td>14</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>14</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=personalizationItem cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=HSpersonalization cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=MOMpersonalization cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=shippingStatus cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>0</td>
+<td>0</td>
+<td>0</td>
+<td>10000</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+<tr><td colspan="18"><b>item-descriptor=paypal cache-mode=simple cache-locality=local</b></td></tr>
+<tr>
+<th>Items</th><td>16</td>
+<td>0</td>
+<td>0</td>
+<td>10000</td>
+<td>0.16%</td>
+<td>29</td>
+<td>24</td>
+<td>54.72%</td>
+<td>29</td>
+<td>24</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>24</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>26</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr><td colspan="18" align="center"><center><i>query caching is disabled</i></center></td></tr>
+</tbody></table>
+</p><h1><a name="properties"></a>Properties</h1>
+<table border="">
+<tbody><tr><th>Name</th><th>Value</th><th>Type</th></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=GSACacheClientManager">GSACacheClientManager</a></td><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/service/GSACacheClientManager/">/atg/dynamo/service/GSACacheClientManager</a></td><td>atg.adapter.gsa.distributed.hybrid.GSACacheClientManager</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=SQLLowerFunction">SQLLowerFunction</a></td><td><span style="white-space:pre">lower</span></td><td>java.lang.String</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=SQLMaxFunction">SQLMaxFunction</a></td><td><span style="white-space:pre">max</span></td><td>java.lang.String</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=SQLMinFunction">SQLMinFunction</a></td><td><span style="white-space:pre">min</span></td><td>java.lang.String</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=XMLToDOMParser">XMLToDOMParser</a></td><td>instanceOf atg.xml.tools.XMLToDOMParserImpl</td><td>atg.xml.tools.XMLToDOMParser</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=XMLToolsFactory">XMLToolsFactory</a></td><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/service/xml/XMLToolsFactory/">/atg/dynamo/service/xml/XMLToolsFactory</a></td><td>atg.xml.tools.XMLToolsFactory</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=absoluteName">absoluteName</a></td><td><span style="white-space:pre">/atg/commerce/order/OrderRepository</span></td><td>java.lang.String</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=adminServlet">adminServlet</a></td><td>instanceOf atg.adapter.gsa.GSAAdminServlet</td><td>javax.servlet.Servlet</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=adminServletOutputStreamEncoding">adminServletOutputStreamEncoding</a></td><td><span style="white-space:pre">UTF-8</span></td><td>java.lang.String</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=adminServletUseServletOutputStream">adminServletUseServletOutputStream</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=allowNullValues">allowNullValues</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=autoCommitInitialization">autoCommitInitialization</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=autoRemoveUnderscoreSuffixForInvalidationAbsoluteName">autoRemoveUnderscoreSuffixForInvalidationAbsoluteName</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=autoUpdateSubscribers">autoUpdateSubscribers</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=cacheLocality">cacheLocality</a></td><td>null</td><td>java.lang.String</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=cacheRestoreFile">cacheRestoreFile</a></td><td>null</td><td>java.io.File</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=cacheSwitchHot">cacheSwitchHot</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=checkItemAmbiguousExistence">checkItemAmbiguousExistence</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=checkTables">checkTables</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=class">class</a></td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td><td>java.lang.Class</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=componentResourceBundleName">componentResourceBundleName</a></td><td><span style="white-space:pre">atg.commerce.OrderRepositoryTemplateResources</span></td><td>java.lang.String</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=computeChecksumAndLength">computeChecksumAndLength</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=contentItemDescriptors">contentItemDescriptors</a></td><td>atg.adapter.gsa.GSAItemDescriptor [0]</td><td>[Latg.adapter.gsa.GSAItemDescriptor;</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=contentRootPathProvider">contentRootPathProvider</a></td><td>null</td><td>atg.repository.content.ContentRootPathProvider</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=dataSource">dataSource</a></td><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/service/jdbc/JTDataSource/">/atg/dynamo/service/jdbc/JTDataSource</a></td><td>javax.sql.DataSource</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=dataSourceConnectionInfo">dataSourceConnectionInfo</a></td><td><span style="white-space:pre">PRODUCTION_ITI@jdbc:oracle:thin:@(DESCRIPTION=(SDU=32767)(ADDRESS=(PROTOCOL=TCP)(HOST=lvm-sql02n.ope.lvm.cvf)(PORT=1721))(CONNECT_DATA=(SERVICE_NAME=COITI)(SERVER=SHARED)))</span></td><td>java.lang.String</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=dataSourceInfoCache">dataSourceInfoCache</a></td><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/service/jdbc/DataSourceInfoCache/">/atg/dynamo/service/jdbc/DataSourceInfoCache</a></td><td>atg.service.jdbc.DataSourceInfoCache</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=databaseName">databaseName</a></td><td><span style="white-space:pre">Oracle</span></td><td>java.lang.String</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=databaseTableInfo">databaseTableInfo</a></td><td>instanceOf atg.adapter.gsa.DatabaseTableInfo</td><td>atg.adapter.gsa.DatabaseTableInfo</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=databaseTableInfos">databaseTableInfos</a></td><td>Dictionary (entryCount: 9)</td><td>atg.nucleus.ServiceMap</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=databaseVersion">databaseVersion</a></td><td>null</td><td>java.lang.String</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=debugLevel">debugLevel</a></td><td><span style="white-space:pre">5</span></td><td>int</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=defaultItemDescriptor">defaultItemDescriptor</a></td><td>instanceOf atg.adapter.gsa.GSAItemDescriptor</td><td>atg.adapter.gsa.GSAItemDescriptor</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=defaultTextSearchStringFormat">defaultTextSearchStringFormat</a></td><td><span style="white-space:pre">ORACLE_CONTEXT</span></td><td>java.lang.String</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=defaultViewName">defaultViewName</a></td><td><span style="white-space:pre">order</span></td><td>java.lang.String</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=definitionFiles">definitionFiles</a></td><td>atg.xml.XMLFile [1]</td><td>[Latg.xml.XMLFile;</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=disableDataSourceInfo">disableDataSourceInfo</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=disableItemCachesAtStartup">disableItemCachesAtStartup</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=disableMultithreadStartup">disableMultithreadStartup</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=disableQueryCachesAtStartup">disableQueryCachesAtStartup</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=disableRepositoryGroupsCache">disableRepositoryGroupsCache</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=enableExternalCacheBatching">enableExternalCacheBatching</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=enforceRequiredProperties">enforceRequiredProperties</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=escapeWildcards">escapeWildcards</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=eventServer">eventServer</a></td><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/server/SQLRepositoryEventServer/">/atg/dynamo/server/SQLRepositoryEventServer</a></td><td>atg.adapter.gsa.event.GSAEventServer</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=exposedRepository">exposedRepository</a></td><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/">/atg/commerce/order/OrderRepository</a></td><td>atg.repository.Repository</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=externalCacheBatchInfoSize">externalCacheBatchInfoSize</a></td><td><span style="white-space:pre">1000</span></td><td>int</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=externalCacheBatchInfoTimeout">externalCacheBatchInfoTimeout</a></td><td><span style="white-space:pre">600000</span></td><td>long</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=externalCacheManager">externalCacheManager</a></td><td>null</td><td>atg.adapter.gsa.externalcache.GSAExternalCacheManager</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=folderItemDescriptor">folderItemDescriptor</a></td><td>null</td><td>atg.adapter.gsa.GSAItemDescriptor</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=foreignRepositoryMapper">foreignRepositoryMapper</a></td><td>null</td><td>atg.repository.RepositoryMapper</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=foreignRepositorySuffix">foreignRepositorySuffix</a></td><td>null</td><td>java.lang.String</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=groupContainer">groupContainer</a></td><td>null</td><td>atg.repository.nucleus.RepositoryGroupContainer</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=groupContainerPath">groupContainerPath</a></td><td>null</td><td>java.lang.String</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=groupProperties">groupProperties</a></td><td>null</td><td>atg.repository.groups.GroupProperties</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=handleRangesInMemory">handleRangesInMemory</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=idGenerator">idGenerator</a></td><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/service/IdGenerator/">/atg/dynamo/service/IdGenerator</a></td><td>atg.service.idgen.IdGenerator</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=initializationCallbacks">initializationCallbacks</a></td><td>atg.adapter.gsa.GSAInitializationCallbacks [0]</td><td>[Latg.adapter.gsa.GSAInitializationCallbacks;</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=invalidateExternalCacheOnFullInvalidate">invalidateExternalCacheOnFullInvalidate</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=invalidationAbsoluteName">invalidationAbsoluteName</a></td><td><span style="white-space:pre">/atg/commerce/order/OrderRepository</span></td><td>java.lang.String</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=invalidatorService">invalidatorService</a></td><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/service/GSAInvalidatorService/">/atg/dynamo/service/GSAInvalidatorService</a></td><td>atg.adapter.gsa.invalidator.GSAInvalidatorService</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=itemDescriptorAliases">itemDescriptorAliases</a></td><td>Dictionary (entryCount: 0)</td><td>java.util.Properties</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=itemDescriptorNames">itemDescriptorNames</a></td><td>java.lang.String [69]</td><td>[Ljava.lang.String;</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=keepWeakItemReferencesOnItemCacheInvalidation">keepWeakItemReferencesOnItemCacheInvalidation</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=lazyBatchLoadTimeout">lazyBatchLoadTimeout</a></td><td><span style="white-space:pre">600000</span></td><td>long</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=lazyLoadItems">lazyLoadItems</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=lazyLoadPropertiesThreshold">lazyLoadPropertiesThreshold</a></td><td><span style="white-space:pre">400</span></td><td>int</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=loadColumnInfosAtStartup">loadColumnInfosAtStartup</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=loadColumnInfosExecutor">loadColumnInfosExecutor</a></td><td>instanceOf java.util.concurrent.ThreadPoolExecutor</td><td>java.util.concurrent.ExecutorService</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=loadColumnInfosInSeparateThread">loadColumnInfosInSeparateThread</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=loadItemBatchSize">loadItemBatchSize</a></td><td><span style="white-space:pre">200</span></td><td>int</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=localTransactionModeInitialization">localTransactionModeInitialization</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=localeSensitiveSorting">localeSensitiveSorting</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=lockManager">lockManager</a></td><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/service/ClientLockManager/">/atg/dynamo/service/ClientLockManager</a></td><td>atg.service.lockmanager.ClientLockManager</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=lockTimeout">lockTimeout</a></td><td><span style="white-space:pre">0</span></td><td>long</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=logListenerCount">logListenerCount</a></td><td><span style="white-space:pre">2</span></td><td>int</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=logListeners">logListeners</a></td><td>atg.nucleus.logging.LogListener [2]</td><td>[Latg.nucleus.logging.LogListener;</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=logNullableTimestampWarning">logNullableTimestampWarning</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=loggingDebug">loggingDebug</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=loggingError">loggingError</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=loggingInfo">loggingInfo</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=loggingTrace">loggingTrace</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=loggingWarning">loggingWarning</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=maxSqlInClauseSize">maxSqlInClauseSize</a></td><td><span style="white-space:pre">999</span></td><td>int</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=maxTableNameLength">maxTableNameLength</a></td><td><span style="white-space:pre">18</span></td><td>int</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=metaDataCatalogName">metaDataCatalogName</a></td><td>null</td><td>java.lang.String</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=metaDataSchemaPattern">metaDataSchemaPattern</a></td><td>null</td><td>java.lang.String</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=name">name</a></td><td><span style="white-space:pre">Orders</span></td><td>java.lang.String</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=nameContext">nameContext</a></td><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/registry/ContentRepositories/">/atg/registry/ContentRepositories</a></td><td>atg.naming.NameContext</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=nucleus">nucleus</a></td><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/">/</a></td><td>atg.nucleus.Nucleus</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=optimizeQueriesFlag">optimizeQueriesFlag</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=outerJoinSupport">outerJoinSupport</a></td><td><span style="white-space:pre">sql92</span></td><td>java.lang.String</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=parsedFirstPass">parsedFirstPass</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=pathSeparator">pathSeparator</a></td><td><span style="white-space:pre">/</span></td><td>java.lang.String</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=preparedStatementPutter">preparedStatementPutter</a></td><td>instanceOf atg.core.jdbc.PreparedStatementPutter</td><td>atg.core.jdbc.PreparedStatementPutter</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=printNull">printNull</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=prohibitCollectionDuplicates">prohibitCollectionDuplicates</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=queryTransactionCacheCutoffSize">queryTransactionCacheCutoffSize</a></td><td><span style="white-space:pre">1000</span></td><td>int</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=repositoryDisplayName">repositoryDisplayName</a></td><td><span style="white-space:pre">Orders</span></td><td>java.lang.String</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=repositoryDisplayNameResource">repositoryDisplayNameResource</a></td><td><span style="white-space:pre">ordersRepositoryDisplayName</span></td><td>java.lang.String</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=repositoryName">repositoryName</a></td><td><span style="white-space:pre">Orders</span></td><td>java.lang.String</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=resourceBundleName">resourceBundleName</a></td><td><span style="white-space:pre">atg.adapter.gsa.GSAResources</span></td><td>java.lang.String</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=restoreCacheOnRestart">restoreCacheOnRestart</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=root">root</a></td><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/">/</a></td><td>atg.naming.NameContext</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=rootFolder">rootFolder</a></td><td>null</td><td>atg.repository.content.ContentRepositoryFolder</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=running">running</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=safeSQLTypes">safeSQLTypes</a></td><td>null</td><td>[Ljava.lang.String;</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=selectiveCacheInvalidationEnabled">selectiveCacheInvalidationEnabled</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=serviceConfiguration">serviceConfiguration</a></td><td>PropertyConfiguration</td><td>atg.nucleus.Configuration</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=serviceInfo">serviceInfo</a></td><td><span style="white-space:pre">A repository which interfaces into a SQL database</span></td><td>java.lang.String</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=setAutoCommit">setAutoCommit</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=shuttingDown">shuttingDown</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=simulateTextSearchQueries">simulateTextSearchQueries</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=simulateTextSearchQueriesMatchingOperation">simulateTextSearchQueriesMatchingOperation</a></td><td><span style="white-space:pre">10</span></td><td>int</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=skipNullProperties">skipNullProperties</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=storeTransientItems">storeTransientItems</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=storeWeakPropertiesWithExternalCache">storeWeakPropertiesWithExternalCache</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=storedProcedureHelper">storedProcedureHelper</a></td><td>instanceOf atg.adapter.gsa.OracleStoredProcedureHelper</td><td>atg.adapter.gsa.StoredProcedureHelper</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=subscriberRepository">subscriberRepository</a></td><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/service/jdbc/SQLRepository/">/atg/dynamo/service/jdbc/SQLRepository</a></td><td>atg.adapter.gsa.GSARepository</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=synchronousInvalidationEvents">synchronousInvalidationEvents</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=tablePrefix">tablePrefix</a></td><td>null</td><td>java.lang.String</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=transactionManager">transactionManager</a></td><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/transaction/TransactionManager/">/atg/dynamo/transaction/TransactionManager</a></td><td>javax.transaction.TransactionManager</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=truncateRepositorySQLFile">truncateRepositorySQLFile</a></td><td>null</td><td>java.io.File</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=truncateTableSQL">truncateTableSQL</a></td><td><span style="white-space:pre">DELETE FROM {0}</span></td><td>java.lang.String</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=updateSchemaInfoCache">updateSchemaInfoCache</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=useCacheForDelete">useCacheForDelete</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=useCachedCountQueries">useCachedCountQueries</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=useConcurrentCaching">useConcurrentCaching</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=useDatabaseQueries">useDatabaseQueries</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=useDistinctForIncludesAnyQueries">useDistinctForIncludesAnyQueries</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=useDistinctForIncludesItemQueries">useDistinctForIncludesItemQueries</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=useDistinctForIncludesQueries">useDistinctForIncludesQueries</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=useSetAsciiStream">useSetAsciiStream</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=useSetBinaryStream">useSetBinaryStream</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=useSetCharacterStream">useSetCharacterStream</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=useSetObject">useSetObject</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=useSetUnicodeStream">useSetUnicodeStream</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=useSubQueriesForIncludesItem">useSubQueriesForIncludesItem</a></td><td><span style="white-space:pre">false</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=useTransactionsForCachedReads">useTransactionsForCachedReads</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=usedCacheModes">usedCacheModes</a></td><td>java.lang.String [1]</td><td>[Ljava.lang.String;</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=userPropertyDescriptors">userPropertyDescriptors</a></td><td>null</td><td>[Ljava.lang.Class;</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=versionRepositoryWrapper">versionRepositoryWrapper</a></td><td>null</td><td>atg.adapter.version.VersionRepository</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=viewNames">viewNames</a></td><td>java.lang.String [69]</td><td>[Ljava.lang.String;</td></tr>
+<tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=warmCacheIfExternal">warmCacheIfExternal</a></td><td><span style="white-space:pre">true</span></td><td>boolean</td></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?propertyName=wildcardEscapeCharacter">wildcardEscapeCharacter</a></td><td><span style="white-space:pre">\</span></td><td>char</td></tr>
+</tbody></table>
+<h1>Event Sets</h1>
+<table border="">
+<tbody><tr><th>Name</th><th>Listener Type</th></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?eventSetName=log">log</a></td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/nucleus/logging/LogListener.html">atg.nucleus.logging.LogListener</a></td></tr>
+</tbody></table>
+<h1>Methods</h1>
+<table border="">
+<tbody><tr><th>Name</th><th>Return Type</th><th>Declaring Class</th></tr>
+<tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=addTableInvalidationListeners">addTableInvalidationListeners</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=applyItemCacheFilter">applyItemCacheFilter</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=applyItemCacheFilterReady">applyItemCacheFilterReady</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=checkSubscriptions">checkSubscriptions</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=clearWeakTables">clearWeakTables</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=commitTransaction">commitTransaction</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=doStartService">doStartService</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=doStopService">doStopService</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=dumpItemCacheFilterLogDebug">dumpItemCacheFilterLogDebug</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=ensureTransaction">ensureTransaction</a></td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/javax/transaction/Transaction.html">javax.transaction.Transaction</a></td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=generateItemDescriptorId">generateItemDescriptorId</a></td><td>int</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=generatePropertyDescriptorId">generatePropertyDescriptorId</a></td><td>int</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=generateSQL">generateSQL</a></td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/java/lang/String.html">java.lang.String</a></td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=generateTableId">generateTableId</a></td><td>int</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=hashCode">hashCode</a></td><td>int</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/java/lang/Object.html">java.lang.Object</a></td></tr><tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=invalidateCaches">invalidateCaches</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=invalidateExternalCaches">invalidateExternalCaches</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=notify">notify</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/java/lang/Object.html">java.lang.Object</a></td></tr><tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=notifyAll">notifyAll</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/java/lang/Object.html">java.lang.Object</a></td></tr><tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=removeExternalCacheBatching">removeExternalCacheBatching</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=removeTableInvalidationListeners">removeTableInvalidationListeners</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=restart">restart</a></td><td>boolean</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=restoreCache">restoreCache</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=revertItemCacheFilter">revertItemCacheFilter</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=stopService">stopService</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/nucleus/GenericService.html">atg.nucleus.GenericService</a></td></tr><tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=toString">toString</a></td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/java/lang/String.html">java.lang.String</a></td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=updateInvalidationAbsoluteName">updateInvalidationAbsoluteName</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr><tr class="odd"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=wait">wait</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/java/lang/Object.html">java.lang.Object</a></td></tr><tr class="even"><td><a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/commerce/order/OrderRepository/?shouldInvokeMethod=writeCacheForRestore">writeCacheForRestore</a></td><td>void</td><td>Class <a href="http://frontadmin11-iti.vuitton.net/dyn/admin/nucleus/atg/dynamo/docs/apidoc/atg/adapter/gsa/GSARepository.html">atg.adapter.gsa.GSARepository</a></td></tr></tbody></table>
+<h1>String Value</h1>
+atg.adapter.gsa.GSARepository@61843967(/atg/commerce/order/OrderRepository)
+
+</body></html>

@@ -1,0 +1,12 @@
+
+body { font-family: arial, sans-serif; }
+
+table.truetable {  border-style:1; }
+td { border-style:none;}
+th { background-color: #E0FFE0;  border-style:none;}
+
+tr.odd td { background-color: #EEEEFF; } 
+
+a { color: #000099; }
+
+div#oracleATGbrand { color: #7B7B7B; font: 17px/33px Arial, Sans-Serif; height: 33px; padding-left: 135px; background:#ffffff url('/dyn/admin/atg/dynamo/admin/images/oracle.png') no-repeat left top; }
