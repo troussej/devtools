@@ -1,0 +1,16 @@
+[
+{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+{ "keys": ["alt+p"], "command": "show_scope_name" },
+{ "keys": ["alt+up"], "command": "swap_line_up" },
+	{ "keys": ["alt+down"], "command": "swap_line_down" },
+{ "keys": ["ctrl+²"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+{
+  "keys": ["ctrl+alt+t"],
+  "command": "open_terminal"
+
+},
+ { "keys": ["alt+e"], "command": "open_url_under_cursor" },
+ { "keys": ["ctrl+alt+enter"], "command": "replace_all", "args": {"close_panel": true},
+		 "context": [{"key": "panel", "operand": "replace"}, {"key": "panel_has_focus"}]
+	},
+]

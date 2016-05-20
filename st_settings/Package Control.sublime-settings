@@ -1,0 +1,44 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Advanced CSV",
+		"AdvancedNewFile",
+		"ApacheConf.tmLanguage",
+		"Auto Refresh",
+		"BracketHighlighter",
+		"BufferScroll",
+		"Case Conversion",
+		"Clickable URLs",
+		"Color Highlighter",
+		"Compare Side-By-Side",
+		"Git",
+		"Github Tools",
+		"HighlightWords",
+		"Hosts",
+		"Inc-Dec-Value",
+		"Indent XML",
+		"IndentTips",
+		"JavaScriptNext - ES6 Syntax",
+		"Local History",
+		"Markdown Extended",
+		"Mercurial",
+		"Mercurial for Sublime",
+		"Monokai Extended",
+		"Monokai JSON+",
+		"Notes",
+		"Package Control",
+		"PackageDev",
+		"PackageResourceViewer",
+		"SideBarEnhancements",
+		"Solarized Color Scheme",
+		"SwapStrings",
+		"SyncedSideBar",
+		"Terminal",
+		"Theme - Soda SolarizedDark",
+		"WordHighlight"
+	]
+}

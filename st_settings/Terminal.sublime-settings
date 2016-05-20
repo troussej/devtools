@@ -1,0 +1,4 @@
+{
+	"terminal": "C:\\cygwin64\\bin\\fatty",
+	"parameters": ["-i", "C:\\cygwin64\\Cygwin-Terminal.ico","-e", "/bin/xhere", "/bin/bash.exe", "%CWD"]
+}

@@ -1,0 +1,17 @@
+{
+	"bold_folder_labels": true,
+	"close_windows_when_empty": false,
+	"color_scheme": "Packages/User/JTRO/ATG/Monokai Extended_JTRO.tmTheme",
+	"draw_white_space": "all",
+	"fade_fold_buttons": false,
+	"font_size": 9,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"http_proxy": "10.83.124.3:3128",
+	"ignored_packages":
+	[
+		"Notes",
+		"Vintage"
+	],
+	"word_wrap": true
+}
