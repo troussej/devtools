@@ -1,0 +1,3 @@
+export http_proxy=http://domain:port
+
+git config --global http.proxy $http_proxy
