@@ -1,0 +1,253 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Notes
+scopeName: source.notes
+fileTypes: [txt,notes]
+uuid: b9bf3970-f517-46fd-a7f8-ae78fd761f84
+patterns:
+- include: '#notes'  
+
+repository:
+  notes:
+    patterns:
+      - include: '#languages'
+      - include: '#keywords'
+      - include: '#titles'
+      - include: '#highlights'
+      - include: '#lists'
+      - include: '#sentences'
+      - include: '#symbols'
+      - include: '#all'
+  titles:
+    patterns:
+    - name: entity.name.class
+      match: ^={1}.*$
+    - name: entity.name.class
+      match: ^={2}.*$
+
+  lists:
+    patterns:
+    - name: markup.bold
+      begin: ^[\t ]*#
+      end: $
+      patterns:
+      - include: '#notes'
+    - name: string.bullet
+      begin: ^[\t ]*-
+      end: $
+      patterns:
+      - include: '#notes'
+    - name: support.function
+      begin: ^[\t ]*>>>
+      end: $
+      patterns:
+      - include: '#notes'
+    - name: entity.name.class
+      begin: ^[\t ]*>>
+      end: $
+      patterns:
+      - include: '#notes'
+    - name: markdown.heading
+      begin: ^[\t ]*>
+      end: $
+      patterns:
+      - include: '#notes'
+    - name: string.bullet
+      match: ^[\t ]*\*\).*$
+    - name: support.function
+      begin: ^[\t ]*o
+      end: $
+      patterns:
+      - include: '#notes'
+  highlights:
+    patterns:
+    - comment: done
+      name:  comment.notes
+      match: '^.*(#DONE)'
+      captures:
+        '1': {name: markup.bold}
+    - comment: brackets
+      name: support.function
+      match: \[[a-zA-Z0-9 ]+\]
+    - comment: Warning critical
+      name: entity.error.atg
+      match: (!!.*!!)
+    - comment: Warning critical
+      name: entity.error.atg
+      match: (!!.*$)
+    - comment: Important, surrounded by <...>
+      name: constant.other.date.notes
+      match: (\<[^\>]*\>)
+    - name: entity.other.inherited-class
+      match: (HYP:.*$)
+    - name: variable.parameter
+      match: (#\d+)
+    - name: markup.bold
+      match: (#[^ ]+)
+    # - comment: Highlights
+    #   name: nothing.notes
+    #   match: ^[^\#]*(\#+[^\#]*\#*)
+    #   captures: 
+    #     '1': {name: variable.language.notes}
+
+  sentences:
+    patterns:
+    - include: '#question'
+  # - include: '#exclamation'
+
+  question:
+    patterns:
+    - name: keyword
+      match: ()
+ 
+  keywords:
+    patterns:
+    - name: keyword
+      match: TBD|TBC|TODO|FIXME|TBA|DONE|null|NULL
+
+  symbols:
+    patterns:
+    - name: markdown.heading
+      match: ->
+    - name: other.remove
+      match: :\(
+  all:
+    patterns:
+    # - name:  keyword
+    #   match: '\[|\]|\{|\}|=|:|,|;|&|\(|\)'  
+    - comment: Urls
+      name: support.class.notes
+      match: (([a-zA-Z]{3,6}3?\:\/\/)?([-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)))
+    - comment: Comments
+      name: comment.notes
+      match: (?<!\:)(\/\/.*)
+    - comment: Line breaks
+      name: support.function.notes
+      match: ^(\-[\-\=]{2}.*)
+    - comment: Ordered bullets
+      name: keyword.operator.notes
+      match: ^([ \t]*[0-9a-z]+[\:\.\)]\)?\s(\w+\:)?)
+      captures:
+        '2': {name: keyword.other.notes}
+    - comment: Unordered bullets
+      name: variable.language.notes
+      match: ^(\t*[\-\=\.]+\s(\w+\:)?)
+      captures:
+        '2': {name: keyword.other.notes}
+    - comment: Emphasis
+      name: keyword.other.notes
+      match: (\*+[^\*]+\*+)
+    - comment: Arrows
+      name: variable.language.notes
+      match: (-+>||=+>||<=+||<-+)
+
+   
+    - comment: Headers
+      name: entity.name.tag.notes
+      match: ^([A-Z].*\:)$
+    - comment: Proper headers
+      name: entity.name.tag.notes
+      match: ^([-=]+\s?\w[\w\s]*[\-=]+)
+    - comment: Single Quotes
+      name: string.quoted.double.notes
+      match: (\"[^\"]*\")
+   
+    # - comment: Emphasis on parentheses
+    #   name: keyword.operator
+    #   match: ([\(\)])
+    - comment: Top-level vocab definitions
+      name: keyword.other.notes
+      match: ^((\w+\s?\w*\:)(?=[ \t][\w\d]))
+  languages:
+    patterns:
+    - comment: SQL
+      begin: (\[)(sql|dml|ddl|mysql)(\])
+      beginCaptures:
+        '1': {name: string.regexp.notes}
+        '2': {name: markup.bold.notes}
+        '3': {name: string.regexp.notes}
+      end: (\[)(\\?\/?(end|sql|dml|ddl|mysql))(\])
+      endCaptures:
+        '1': {name: string.regexp.notes}
+        '3': {name: markup.bold.notes}
+        '4': {name: string.regexp.notes}
+      patterns:
+      - {include: source.sql}
+    - comment: XML
+      begin: (\[)(xml|tld|jsp|pt|cpt|dtml|rss|opml)(\])
+      beginCaptures:
+        '1': {name: string.regexp.notes}
+        '2': {name: markup.bold.notes}
+        '3': {name: string.regexp.notes}
+      end: (\[)(\\?\/?(end|xml|tld|jsp|pt|cpt|dtml|rss|opml))(\])
+      endCaptures:
+        '1': {name: string.regexp.notes}
+        '3': {name: markup.bold.notes}
+        '4': {name: string.regexp.notes}
+      patterns:
+      - {include: text.xml}  
+    - comment: ATG
+      begin: (\[)(atg)(\])
+      beginCaptures:
+        '1': {name: string.regexp.notes}
+        '2': {name: markup.bold.notes}
+        '3': {name: string.regexp.notes}
+      end: (\[)(\\?\/?(atg))(\])
+      endCaptures:
+        '1': {name: string.regexp.notes}
+        '3': {name: markup.bold.notes}
+        '4': {name: string.regexp.notes}
+      patterns:
+      - {include: text.atg}  
+    - comment: Java
+      begin: (\[)(java|bsh)(\])
+      beginCaptures:
+        '1': {name: string.regexp.notes}
+        '2': {name: markup.bold.notes}
+        '3': {name: string.regexp.notes}
+      end: (\[)(\\?\/?(end|java|bsh))(\])
+      endCaptures:
+        '1': {name: string.regexp.notes}
+        '3': {name: markup.bold.notes}
+        '4': {name: string.regexp.notes}
+      patterns:
+      - {include: source.java}
+    - comment: Javascript
+      begin: (\[)(js|jsx|htc|javascript)(\])
+      beginCaptures:
+        '1': {name: string.regexp.notes}
+        '2': {name: markup.bold.notes}
+        '3': {name: string.regexp.notes}
+      end: (\[)(\\?\/?(end|js|jsx|htc|javascript))(\])
+      endCaptures:
+        '1': {name: string.regexp.notes}
+        '3': {name: markup.bold.notes}
+        '4': {name: string.regexp.notes}
+      patterns:
+      - {include: source.js}
+    - comment: HTML
+      begin: (\[)(html|htm|shtml|xhtml|phtml|inc|tmpl|tpl|ctp)(\])
+      beginCaptures:
+        '1': {name: string.regexp.notes}
+        '2': {name: markup.bold.notes}
+        '3': {name: string.regexp.notes}
+      end: (\[)(\\?\/?(end|html|htm|shtml|xhtml|phtml|inc|tmpl|tpl|ctp))(\])
+      endCaptures:
+        '1': {name: string.regexp.notes}
+        '3': {name: markup.bold.notes}
+        '4': {name: string.regexp.notes}
+      patterns:
+      - {include: text.html.basic}
+    - comment: Shell
+      begin: (\[)(sh|bash|zsh|bashrc)(\])
+      beginCaptures:
+        '1': {name: string.regexp.notes}
+        '2': {name: markup.bold.notes}
+        '3': {name: string.regexp.notes}
+      end: (\[)(\\?\/?(end|sh|bash|zsh|bashrc))(\])
+      endCaptures:
+        '1': {name: string.regexp.notes}
+        '3': {name: markup.bold.notes}
+        '4': {name: string.regexp.notes}
+      patterns:
+      - {include: source.shell}

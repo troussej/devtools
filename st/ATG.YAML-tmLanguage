@@ -1,0 +1,267 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+name: ATG
+scopeName: text.atg
+fileTypes: [log]
+uuid: 59d2eab0-506c-4c33-8e2f-a6a74820383a
+
+patterns:
+
+    
+#STANDARD ATG DAS LOG FORMAT
+  - name:  entity.trace.atg
+    contentName: entity.trace.message.atg
+    begin: '^(\*{4} )([Tt](race|RACE))'
+    end: '^(?=\*{4})'
+    patterns:
+    - include: '#logmessage'
+
+  - name:  entity.debug.atg
+    contentName: entity.debug.message.atg
+    begin: '^(\*{4} )([Dd](ebug|EBUG))'
+    end: '^(?=\*{4})'
+    patterns:
+    - include: '#logmessage'
+
+  - name:  entity.info.atg
+    contentName: entity.info.message.atg
+    begin: '^(\*{4} )?([Ii]nfo)'
+    end: '^(?=\*{4})'
+    patterns:
+    - include: '#logmessage'
+
+  - name:  entity.warn.atg
+    contentName: entity.warn.message.atg
+    begin: '^(\*{4} )?(Warn)'
+    end: '^(?=\*{4})'
+    patterns:
+    - include: '#logmessage'
+
+  - name:  entity.error.atg
+    contentName: entity.error.message.atg
+    begin: '^(\*{4} )?(Error)'
+    end: '^(?=\*{4})'
+    patterns:
+    - include: '#logmessage'
+
+    # #JBOSS format
+#04/03/2016 
+
+  #debug logged in info in jboss
+
+  - name:  entity.debug.atg
+    contentName: entity.debug.message.atg
+    begin: '^((\d{4}-\d{2}-\d{2} )|(\d{2}/\d{2}/\d{4}) )?(\d{2}:\d{2}:\d{2},\d{3}) ?INFO +(\[[^\[\]]+\])?( \([^\)]+\))? DEBUG'
+    beginCaptures:
+      '5': {name: support.class.component }
+    end: '^(?=(((\d{4}-\d{2}-\d{2} )|(\d{2}/\d{2}/\d{4}) )?(\d{2}:\d{2}:\d{2},\d{3}) ?))'
+    patterns:
+    - include: '#logmessage'
+
+  - name:  entity.trace.atg
+    contentName: entity.trace.message.atg
+    begin: '^((\d{4}-\d{2}-\d{2} )|(\d{2}/\d{2}/\d{4}) )?(\d{2}:\d{2}:\d{2},\d{3}) ?TRACE +(\[[^\[\]]+\])?'
+    beginCaptures:
+      '5': {name: support.class.component }
+    end: '^(?=(((\d{4}-\d{2}-\d{2} )|(\d{2}/\d{2}/\d{4}) )?(\d{2}:\d{2}:\d{2},\d{3}) ?))'
+    patterns:
+    - include: '#logmessage'
+
+  - name:  entity.debug.atg
+    contentName: entity.debug.message.atg
+    begin: '^((\d{4}-\d{2}-\d{2} )|(\d{2}/\d{2}/\d{4}) )?(\d{2}:\d{2}:\d{2},\d{3}) ?DEBUG +(\[[^\[\]]+\])?'
+    beginCaptures:
+      '5': {name: support.class.component }
+    end: '^(?=(((\d{4}-\d{2}-\d{2} )|(\d{2}/\d{2}/\d{4}) )?(\d{2}:\d{2}:\d{2},\d{3}) ?))'
+    patterns:
+    - include: '#logmessage'
+
+  - name:  entity.warn.atg
+    contentName: entity.warn.message.atg
+    begin: '^((\d{4}-\d{2}-\d{2} )|(\d{2}/\d{2}/\d{4}) )?(\d{2}:\d{2}:\d{2},\d{3}) ?WARN +(\[[^\[\]]+\])?'
+    beginCaptures:
+      '5': {name: support.class.component }
+    end: '^(?=(((\d{4}-\d{2}-\d{2} )|(\d{2}/\d{2}/\d{4}) )?(\d{2}:\d{2}:\d{2},\d{3}) ?))'
+    patterns:
+    - include: '#logmessage'
+
+  - name:  entity.error.atg
+    contentName: entity.error.message.atg
+    begin: '^((\d{4}-\d{2}-\d{2} )|(\d{2}/\d{2}/\d{4}) )?(\d{2}:\d{2}:\d{2},\d{3}) ?ERROR +(\[[^\[\]]+\])?'
+    beginCaptures:
+      '5': {name: support.class.component }
+    end: '^(?=(((\d{4}-\d{2}-\d{2} )|(\d{2}/\d{2}/\d{4}) )?(\d{2}:\d{2}:\d{2},\d{3}) ?))'
+    patterns:
+    - include: '#logmessage'
+
+  - name:  entity.error.atg
+    contentName: entity.error.message.atg
+    begin: '^((\d{4}-\d{2}-\d{2} )|(\d{2}\/\d{2}\/\d{4}) )?(\d{2}:\d{2}:\d{2},\d{3}) ?INFO +(\[[^\[\]]+\])?( \([^\)]+\))? \*{4} Error'
+    beginCaptures:
+      '5': {name: support.class.component }
+    end: '^(?=(((\d{4}-\d{2}-\d{2} )|(\d{2}/\d{2}/\d{4}) )?(\d{2}:\d{2}:\d{2},\d{3}) ?))'
+    patterns:
+    - include: '#logmessage'
+
+
+  - name:  entity.error.atg
+    contentName: entity.error.message.atg
+    begin: '^((\d{4}-\d{2}-\d{2} )|(\d{2}/\d{2}/\d{4}) )?(\d{2}:\d{2}:\d{2},\d{3}) ?INFO +(\[[^\[\]]+\])? (\** Error)'
+    beginCaptures:
+      '5': {name: support.class.component }
+    end: '^(?=(((\d{4}-\d{2}-\d{2} )|(\d{2}/\d{2}/\d{4}) )?(\d{2}:\d{2}:\d{2},\d{3}) ?))'
+    patterns:
+    - include: '#logmessage'
+
+
+  - name:  entity.info.atg
+    contentName: entity.info.message.atg
+    begin: '^((\d{4}-\d{2}-\d{2} )|(\d{2}/\d{2}/\d{4}) )?(\d{2}:\d{2}:\d{2},\d{3}) ?INFO +(\[[^\[\]]+\])?'
+    beginCaptures:
+      '5': {name: support.class.component }
+    end: '^(?=(((\d{4}-\d{2}-\d{2} )|(\d{2}/\d{2}/\d{4}) )?(\d{2}:\d{2}:\d{2},\d{3}) ?))'
+    patterns:
+    - include: '#logmessage'
+
+repository:
+
+  logmessage:
+    patterns:
+     - include: '#stacktrace'
+     - include: '#sqldebug'
+     - include: '#value'
+     
+
+  value:
+    patterns:      
+      - include: '#pipeline'
+      - include: '#components'
+      - include: '#keywords'
+      - include: '#commerceObjects'
+      - include: '#keyvalue'
+
+      
+#     # at atg.commerce.payment.PaymentManager.debit(PaymentManager.java:641)
+  stacktrace:
+    patterns:
+      - include: '#stacktrace_keywords'
+      - include: '#stacktrace_container'
+      - include: '#stacktrace_at'
+
+  stacktrace_keywords:
+    name: keyword.stacktrace
+    match: 'Caused by|SOURCE:'
+
+  stacktrace_container:
+    name: meta.structure.object.stacktrace.container
+    match: '(CONTAINER:)([\w\.]+)(;|:([^;:]+;))'
+    captures:
+      '1': {name: keyword}
+      '2': {name: constant.language.class}
+      '4': {name: entity.error.message.stacktrace}
+
+
+  stacktrace_at:
+    name: entity.error.message.stacktrace
+    contentName: entity.error.message.stacktrace
+    #at atg.commerce.payment.PaymentManager.debit(PaymentManager.java:641)
+    match: '(at) ([^\(]+)\.([^\.]+)\.([^\.]+)(\((\w+\.\w+):(\d+)\))'
+    captures:
+      '1': {name: entity.error.keyword.stacktrace}
+      '3': {name: constant.language.class.stacktrace}
+      '4': {name: entity.name.function.stacktrace}
+      '6': {name: variable.parameter.stacktrace}
+      '7': {name: variable.parameter.stacktrace}
+  
+  sqldebug:
+    patterns:
+    - name: string
+      contentName: string
+      begin: '\[\+\+SQLQuery\+\+\]'  
+      beginCaptures:
+        '0': {name: string}
+      end: '\[--SQLQuery--\]'
+      endCaptures:
+        '0': {name: string}
+      patterns:
+      - include: 'source.sql'
+    - name: string
+      contentName: string
+      begin: '\[\+\+SQLSelect\+\+\]'  
+      beginCaptures:
+        '0': {name: string}
+      end: '\[--SQLSelect--\]'
+      endCaptures:
+        '0': {name: string}
+      patterns:
+      - include: 'source.sql'
+
+
+  pipeline:
+    patterns:
+    - name: constant.language.chain
+      match: '(Done )?(Executing Chain: )(\b.*\b)'
+      captures:
+        '3': {name: entity.name.tag.chain}
+    - name: constant.language.link
+      match: 'Executing link: (\b.*\b)'
+      captures:
+        '1': {name: variable.parameter.link}
+    - name: constant.language.link.last
+      match: 'Last processor in chain, (stopping) chain execution for chain: (\b.*\b)'
+      captures:
+        '2': {name: entity.name.tag.chain}
+    - name: constant.language.link
+      match: 'Link (\b.*\b) return value: (\d+)'
+      captures:
+        '1': {name: variable.parameter.link}
+        '2': {name: storage.link.return}
+    - name: constant.language.chain
+      match: 'PipelineResult has (\d+) errors'
+      captures:
+        '1': {name: storage.link.return}
+    - name: support
+      match: '(TX_.*\b)'
+      captures:
+        '1': {name: support.transaction}
+
+  commerceObjects:
+    patterns:
+      - name: keyword.atg.order
+        match: '(order) ([^ .:\[\]]+)'
+      - name: keyword.atg.orderPriceInfo
+        match: '(orderPriceInfo):([^ .:\[\]]+)'
+      - name: keyword.atg.id
+        match: '\[([\w\d]+)\]'
+        captures:
+          '1': {name: variable.parameter}
+
+  components:
+    patterns:
+      - name:  support.class.component
+        match: '[\t| ]((/\b[^ \t]+)+)(/\b[^ \t]+)'
+        captures:
+          '3': {name: support.class.component.name}
+      - name:  support.class.component
+        match: '(\[)(([a-zA-Z]+\.)+)(([a-zA-Z])+)(\])'
+        captures:
+          '1': {name: keyword}
+          '4': {name: support.class.component.name}
+          '6': {name: keyword}
+  keywords:
+    patterns:
+      - name:  keyword
+        match: '\[|\]|\{|\}|=|:|,|;|&|\(|\)'      
+      - name:  keyword.atg.sku
+        match: '\b[Ss][Kk][Uu]\b( |:|=)'   
+
+
+
+  # keyvalue:
+  #   name: meta.structure.object.json
+  #   match: '([a-zA-Z\.\d_ ]+)([:=])([a-zA-Z\.\d_ /]+)'
+  #   captures:
+  #     '1': {name: constant.language}
+  #     '2': {name: keyword.operator}
+  #     '3': {name: variable.parameter}
+
+
